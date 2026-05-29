@@ -15,3 +15,5 @@ document.addEventListener('scrollend',(e)=>{
     
 })
 
+//add a click me b4 i disa]ear button on canvas maybe to visit sth like github
+
