@@ -5,7 +5,7 @@ window.onload = ()=>{
     let socials = document.querySelector('#socials')
 let canvas = document.querySelector('#canvas1')
 
-canvas.height = 500
+canvas.height = 490
 canvas.width = 200
 
 let ctx = canvas.getContext('2d')
@@ -17,13 +17,14 @@ ctx.fill()
 
 document.addEventListener('scroll',(e)=>{
     console.log(e)
-    socials.classList.add('none')
+    socials.setAttribute('hidden','hidden')
     
 })
 
 document.addEventListener('scrollend',(e)=>{
     console.log(e)
-    socials.classList.remove('none')
+    socials.removeAttribute('hidden')
+    
     
     
 })

@@ -34,10 +34,10 @@ body{
 
 #hero{
     background-image: url(images/markmote.jpg) ;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: inset 400px 50px 500px black,inset -300px -50px 500px black;
+    box-shadow: inset 500px 50px 500px black,inset -400px -150px 500px black;
     height: 500px;
     border: 2px solid red;
     margin: 0;
@@ -118,7 +118,7 @@ h2 ,h3{
     position: fixed;
    right: 30px;
    top: 200px;
-   background-color: hsla(184, 51%, 24%, 0.3);
+   background-color: hsla(184, 56%, 72%, 0.5);
    padding: 2px;
    border-radius: 2px;
    
@@ -140,6 +140,16 @@ h2 ,h3{
 #knowme {
     position: absolute;
     top: 480px;
+    display: flex;
+    gap: 5px;
+    
+}
+#knowme a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
 }
 
 #myname{
@@ -167,17 +177,18 @@ h2 ,h3{
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 1024px){
     #hero{
     
-    box-shadow: inset 300px 50px 500px black,inset -250px -50px 500px black;
+    box-shadow: inset 400px 50px 500px black,inset -250px -50px 500px black;
 }
     
 }
-@media (max-width: 600px){
+@media (max-width: 724px){
     #hero{
     
     box-shadow: inset 200px 40px 500px black,inset -100px -50px 500px black;
+    background-size: cover;
     
 
     
