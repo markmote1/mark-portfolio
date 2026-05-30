@@ -9,16 +9,13 @@
 </head>
 <body >
 
-<!-- <header>
-    
-    <canvas id="c1"></canvas>
-</header> -->
+
 
 <section id="hero">
-    
+    <canvas id="canvas1"></canvas>
 
 <button>DARK</button>
-<canvas id="canvas1"></canvas>
+
 
     <aside id="socials">
         <nav  id="socialNavs">
@@ -33,6 +30,7 @@
             <p>I simply do write code and create products</p>
 
  </div>
+ 
 
  <div id="knowme">
     <nav>
@@ -44,48 +42,61 @@
 
 </section>
 
-
-
-<section>
-    <header>
-        <h2>My Projects</h2>
-    </header>
-<div id="allProjects">
-<div title="project holder" id="projectWrapper">
-    <h6>Blog webapp</h6>
-    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
-    <p>This is a simple website built using different technologies like javascript html and css</p>
+<section id="about">
+<header>
+    <h1>About me</h1>
+</header>
+<div>
+    <p>I'm a passionate fullstack developer</p>
+    <p>I'm a graduate of the Cooperative university of Kenya where i graduated 
+        with a Bachelor's degree in disaster Risk management and Sustainable Development
+    </p>
 </div>
-<div title="project holder" id="projectWrapper">
-    <h6>Blog webapp</h6>
-    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
-    <p>This is a simple website built using different technologies like javascript html and css</p>
-</div>
-<div title="project holder" id="projectWrapper">
-    <h6>Blog webapp</h6>
-    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
-    <p>This is a simple website built using different technologies like javascript html and css</p>
-</div>
-<div title="project holder" id="projectWrapper">
-    <h6>Blog webapp</h6>
-    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
-    <p>This is a simple website built using different technologies like javascript html and css</p>
-</div>
-<div title="project holder" id="projectWrapper">
-    <h6>Blog webapp</h6>
-    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
-    <p>This is a simple website built using different technologies like javascript html and css</p>
-</div>
-    </div>
 </section>
 
-<section>
+
+
+<section id="projectsSection">
+    <header>
+        <h2>My Projects</h2>
+        <p>Have a look at some of my works</p>
+    </header>
+<ul id="allProjects">
+<li title="project holder" id="projectWrapper">
+    <h3>Blog webapp</h3>
+    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
+    <p>This is a simple website built using different technologies like javascript html and css</p>
+</li>
+<li title="project holder" id="projectWrapper">
+    <h3>Blog webapp</h3>
+    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
+    <p>This is a simple website built using different technologies like javascript html and css</p>
+</li>
+<li title="project holder" id="projectWrapper">
+    <h3>Blog webapp</h3>
+    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
+    <p>This is a simple website built using different technologies like javascript html and css</p>
+</li>
+<li title="project holder" id="projectWrapper">
+    <h3>Blog webapp</h3>
+    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
+    <p>This is a simple website built using different technologies like javascript html and css</p>
+</li>
+<li title="project holder" id="projectWrapper">
+    <h3>Blog webapp</h3>
+    <img title="project's image" width="200px" src="images/markmote.jpg" alt="mark mote coding project">
+    <p>This is a simple website built using different technologies like javascript html and css</p>
+</li>
+    </ul>
+</section>
+
+<section id="skillsHolder">
     <header>
         <h2>
             My Skills
         </h2>
     </header>
-<ul>
+<ul id="skills">
     <li>Javascript</li>
     <li>Html 5</li>
     <li>CSS 3</li>
@@ -96,25 +107,25 @@
 
 </section>
 
-<section>
+<section id="contact">
     <header>
         <h2>
              Contact me
         </h2>
     </header>
 
-<form title="Enter details to contact me on whatsapp!" action="">
+<form id="form1" title="Enter details to contact me on whatsapp!" action="">
 
 <fieldset>
     <legend><strong>Contact me on Whatsapp!</strong></legend><br>
 
 <div>
-    <label for="fullname"><strong>Name:</strong><br><br>
+    <label for="fullname">Your name:<br><br>
         <input required type="text" id="fullname" placeholder="Mark Mote">
     </label>
     <br> <br>
-    <label for="textarea"><strong>Input your message here:</strong><br><br>
-        <textarea  id="textarea" cols="40" rows="20" id="" placeholder="I would like...." maxlength="200" required></textarea>
+    <label for="textarea">Input your message here:<br><br>
+        <textarea  id="textarea" cols="40" rows="20" id="" placeholder="Enter your message here..." maxlength="200" required></textarea>
     </label>
 </div>
 
@@ -128,12 +139,12 @@
 
 
 
-<footer>
+<footer id="footer">
     <p><strong>&copy; 2026 - Mark Mote</strong></p>
-    <address>ARTARK TECH. <br>
+    <!-- <address>ARTARK TECH. <br>
         Nairobi, <br>
         Kenya.
-    </address>
+    </address> -->
 </footer>
 
 </body>

@@ -3,6 +3,7 @@ body{
     background-color: black;
     margin: 10px;
     padding: 0;
+    font-weight: lighter;
 }
 
 #projectWrapper{
@@ -12,12 +13,23 @@ body{
     text-align: center;
     border-radius: 15px;
     width: 200px;
+    background-color: hsla(184, 51%, 24%, 0.1);
+}
+#projectWrapper:hover{
+    transform: scale(0.99);
+    transition: all 0.1s ease-in-out;
+
 }
 #allProjects{
     display: flex;
     flex-wrap: wrap;
 
     justify-content: center;
+    list-style: none;
+}
+#projectsSection{
+    text-align: center;
+
 }
 
 #hero{
@@ -30,6 +42,7 @@ body{
     border: 2px solid red;
     margin: 0;
     padding: 5px;
+    position: relative;
 }
 
 #hero-content{
@@ -41,6 +54,65 @@ body{
    color: rgb(255, 255, 255);
    
 }
+
+#about{
+    text-align: center;
+    margin: 100px;
+    padding: 2px;
+    letter-spacing: 1px;
+
+}
+#skills{
+    text-align: center;
+    padding: 20px;
+    line-height: 30px;
+    list-style: none;
+    
+}
+#skillsHolder {
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+
+}
+
+#form1{
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    
+}
+fieldset{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    background-color: hsla(184, 51%, 24%, 0.1);
+}
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+legend {
+    color: white;
+    padding: 0 10px;
+}
+
+p{
+    letter-spacing: 0.9px;
+    font-size: 15px;
+    font-family: cursive;
+}
+h2 ,h3{
+    letter-spacing: 2px;
+}
+
+
 
 #socials{
     position: fixed;
@@ -75,41 +147,54 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-#{
+#canvas1{
+    border: 10px solid white;
+    position: absolute;
+    left: 0px;
+    cursor: crosshair;
+
+}
+
+#footer{
+    background-color: hsla(184, 91%, 9%, 0.1);
+    margin: 20px;
+    padding: 10px ;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+
     
 }
 
+
 @media (max-width: 900px){
     #hero{
-    /* background-image: url(images/markmote.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
+    
     box-shadow: inset 300px 50px 500px black,inset -250px -50px 500px black;
-    /* height: 500px;
-    border: 2px solid red;
-    margin: 0;
-    padding: 5px; */
 }
     
 }
 @media (max-width: 600px){
     #hero{
-    /* background-image: url(images/markmote.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
+    
     box-shadow: inset 200px 40px 500px black,inset -100px -50px 500px black;
-    /* height: 300px; */
+    
 
     
 }
 #hero-content{
    position: absolute;
     left: 10px;
+    top: 250px;
    
 }
+   #projectWrapper{
+    padding: 10px;
+    margin: 10px;
     
+    border-radius: 10px;
+    width: 300px;
+} 
 #socials{
    right: 20px;
    top: 400px;
