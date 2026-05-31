@@ -4,6 +4,7 @@ body{
     margin: 10px;
     padding: 0;
     font-weight: lighter;
+    box-sizing: border-box;
 }
 
 .projectWrapper{
@@ -29,7 +30,9 @@ body{
 }
 #projectsSection{
     text-align: center;
-
+    height: 100vh;
+overflow-y: auto;
+scrollbar-width: none;
 }
 .cardImage{
     width: 200px;
@@ -42,8 +45,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: inset 500px 50px 500px black,inset -400px -150px 500px black;
-    height: 500px;
-    border: 2px solid red;
+    height: 100vh;
+    /* border: 2px solid red; */
     margin: 0;
     padding: 5px;
     position: relative;
@@ -64,6 +67,7 @@ body{
     margin: 100px;
     padding: 2px;
     letter-spacing: 1px;
+    height: 100vh;
 
 }
 #skills{
@@ -75,6 +79,7 @@ body{
 }
 #skillsHolder {
     text-align: center;
+    height: 100vh;
 }
 
 #contact{
@@ -118,10 +123,10 @@ h2 ,h3{
 
 
 
-#socials{
+.socials{
     position: fixed;
    right: 30px;
-   top: 100px;
+   top: 300px;
    background-color: hsla(184, 56%, 72%, 0.5);
    padding: 2px;
    border-radius: 10px;
@@ -143,7 +148,7 @@ h2 ,h3{
 
 #knowme {
     position: absolute;
-    top: 480px;
+    top: 90%;
     display: flex;
     gap: 5px;
     
@@ -185,13 +190,14 @@ h2 ,h3{
     #hero{
     
     box-shadow: inset 400px 50px 500px black,inset -250px -50px 500px black;
+    background-size: cover;
 }
     
 }
 @media (max-width: 724px){
     #hero{
     
-    box-shadow: inset 200px 40px 500px black,inset -100px -50px 500px black;
+    box-shadow: inset 200px 40px 500px black,inset -70px -50px 70px black;
     background-size: cover;
     
 
@@ -209,8 +215,8 @@ h2 ,h3{
     border-radius: 10px;
     width: 300px;
 } 
-#socials{
-   right: 20px;
+.socials{
+   right: 1px;
    top: 250px;
    
    

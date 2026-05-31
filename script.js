@@ -5,7 +5,7 @@ window.onload = ()=>{
 
 console.log('init')
 
-let socials = document.querySelector('#socials')
+let socials = document.querySelector('.socials')
 let projectHolder = document.querySelector('#allProjects')
 let canvas = document.querySelector('#canvas1')
 
