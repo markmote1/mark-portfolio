@@ -6,7 +6,7 @@ body{
     font-weight: lighter;
 }
 
-#projectWrapper{
+.projectWrapper{
     border: 1px solid white;
     padding: 20px;
     margin: 10px;
@@ -15,7 +15,7 @@ body{
     width: 200px;
     background-color: hsla(184, 51%, 24%, 0.1);
 }
-#projectWrapper:hover{
+.projectWrapper:hover{
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
 
@@ -30,6 +30,10 @@ body{
 #projectsSection{
     text-align: center;
 
+}
+.cardImage{
+    width: 200px;
+    border-radius: 5px;
 }
 
 #hero{
@@ -117,10 +121,10 @@ h2 ,h3{
 #socials{
     position: fixed;
    right: 30px;
-   top: 200px;
+   top: 100px;
    background-color: hsla(184, 56%, 72%, 0.5);
    padding: 2px;
-   border-radius: 2px;
+   border-radius: 10px;
    
 }
 .none{
@@ -199,16 +203,15 @@ h2 ,h3{
     top: 250px;
    
 }
-   #projectWrapper{
+   .projectWrapper{
     padding: 10px;
     margin: 10px;
-    
     border-radius: 10px;
     width: 300px;
 } 
 #socials{
    right: 20px;
-   top: 400px;
+   top: 250px;
    
    
 }
