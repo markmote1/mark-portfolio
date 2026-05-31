@@ -3,7 +3,7 @@ body{
     background: linear-gradient(to bottom, #000000, #001020);
     margin: 10px;
     padding: 0;
-    font-weight: lighter;
+    font-weight: 500;
     box-sizing: border-box;
 }
 
@@ -21,12 +21,22 @@ body{
     transition: all 0.1s ease-in-out;
 
 }
-
-.profile-img{
-    height: 100vh;
-    width: 100%;
-    
+.profile-img-wrapper {
     position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 100%;
+    z-index: 0;
+}
+
+.profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);
 }
 
 #allProjects{
@@ -52,19 +62,31 @@ body{
     height: 100vh;
     border: 2px solid red;
     margin: 0;
-    padding: 5px;
+    padding-left: 50px;
+    display: flex;
     position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
 #hero-content{
-    position: absolute;
-    left: 50px;
-    padding: 5px;
-    text-shadow: 3px 3px 3px black ;
-    top: 200px;
-    color: rgb(255, 255, 255);
+    position: relative;
+    max-width: 480px;
+    margin-bottom: 20px;
+    z-index: 1;
     
+}
+
+#hero-content h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #94a3b8;
 }
 
 #about{
@@ -80,9 +102,8 @@ body{
     text-align: center;
     margin-bottom: 40px;
 }
-#about header h2{
+h2{
     margin-bottom: 8px;
-    letter-spacing: 2px;
 }
 .about-card{
     display: flex;
@@ -125,6 +146,7 @@ body{
     object-fit: cover;
     border-bottom: 2px solid cyan;
 }
+
 .accent-border {
     position: absolute;
     top: 10px;
@@ -199,19 +221,25 @@ h2 ,h3{
 
 .socials{
     position: fixed;
-   right: 30px;
-   top: 50%;
-   background-color: hsla(184, 56%, 72%, 0.5);
+   right: 20px;
+   top: 70%;
    padding: 2px;
    border-radius: 10px;
+   z-index: 99;
    
 }
 .none{
     display: none;
 }
+#socialNavs{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
 
 #socialNavs a img{
-    width: 30px;
+    width: 20px;
+    filter: invert(1)
 }
 #socialNavs a :hover{
     background-color: aliceblue;
@@ -221,22 +249,32 @@ h2 ,h3{
 }
 
 #knowme {
-    position: absolute;
-    top: 90%;
+    position: relative;
+    z-index: 1;
     display: flex;
-    gap: 5px;
+    gap: 12px;
+    margin-bottom: 24px;
     
 }
 #knowme a{
     text-decoration: none;
+    font-size: 14px;
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 50%;
-    padding: 2px;
+    padding: 10px 22px;
+}
+
+
+#knowme a:hover {
+    background: rgba(255,255,255,0.08);
 }
 
 #myname{
-    font-size: 50px;
+    font-size: 56px;
+    color: white;
+    display: block;
+    margin-bottom: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -270,15 +308,19 @@ h2 ,h3{
 @media (max-width: 724px){
     #hero{
     
-    background-size: contain;
+    padding-left: 20px;
+        padding-right: 20px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-bottom: 60px;
     
 
     
 }
 #hero-content{
    position: absolute;
-    left: 10px;
-    top: 250px;
+    left: 1px;
+    top: 300px;
    
 }
    .projectWrapper{
@@ -288,11 +330,16 @@ h2 ,h3{
     width: 300px;
 } 
 .socials{
-   right: 1px;
+   right: 8px;
   
    
    
 }
+#myname {
+        font-size: 38px;
+    }
+
+   
 #socialNavs a img{
     width: 20px;
 }
@@ -301,5 +348,12 @@ h2 ,h3{
         text-align: center;
     }
     .about-tags { justify-content: center; }
+.profile-img-wrapper {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    
+
     
 }
