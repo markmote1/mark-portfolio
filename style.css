@@ -1,6 +1,6 @@
 body{
     color: white;
-    background-color: black;
+    background: linear-gradient(to bottom, #000000, #001020);
     margin: 10px;
     padding: 0;
     font-weight: lighter;
@@ -21,18 +21,26 @@ body{
     transition: all 0.1s ease-in-out;
 
 }
+
+.profile-img{
+    height: 100vh;
+    width: 100%;
+    
+    position: absolute;
+}
+
 #allProjects{
     display: flex;
     flex-wrap: wrap;
-
+    
     justify-content: center;
     list-style: none;
 }
 #projectsSection{
     text-align: center;
     height: 100vh;
-overflow-y: auto;
-scrollbar-width: none;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 .cardImage{
     width: 200px;
@@ -40,36 +48,102 @@ scrollbar-width: none;
 }
 
 #hero{
-    background-image: url(images/markmote.jpg) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: inset 500px 50px 500px black,inset -400px -150px 500px black;
+    
     height: 100vh;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     margin: 0;
     padding: 5px;
     position: relative;
+    
 }
 
 #hero-content{
-   position: absolute;
-   left: 50px;
-   padding: 5px;
-   text-shadow: 3px 3px 3px black ;
-   top: 200px;
-   color: rgb(255, 255, 255);
-   
+    position: absolute;
+    left: 50px;
+    padding: 5px;
+    text-shadow: 3px 3px 3px black ;
+    top: 200px;
+    color: rgb(255, 255, 255);
+    
 }
 
 #about{
-    text-align: center;
-    margin: 100px;
-    padding: 2px;
-    letter-spacing: 1px;
+    padding: 60px 40px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
 
 }
+#about header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#about header h2{
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+.about-card{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 768px;
+    margin: 0 auto;
+    border: 1px solid red;
+    
+    
+}
+.about-img-wrapper{
+    flex-shrink: 0;
+    position: relative;
+}
+.about-info{
+    flex: 1;
+    border: 1px solid green;
+    background-color: hsla(184, 51%, 24%, 0.1);
+    padding: 20px;
+        border-radius: 12px;
+}
+.about-info p:first-child {
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+}
+.about-info p {
+    color: #94a3b8;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+.about-img{
+    height: 18em;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+
+    object-fit: cover;
+    border-bottom: 2px solid cyan;
+}
+.accent-border {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 12em;
+    height: 11em;
+    border: 2px solid rgb(0, 3, 3);
+    border-radius: 20%;
+    background-color: cyan;
+    z-index: 0;
+}
+.about-underline {
+    width: 50px;
+    height: 2px;
+    background: cyan;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
 #skills{
     text-align: center;
     padding: 20px;
@@ -126,7 +200,7 @@ h2 ,h3{
 .socials{
     position: fixed;
    right: 30px;
-   top: 300px;
+   top: 50%;
    background-color: hsla(184, 56%, 72%, 0.5);
    padding: 2px;
    border-radius: 10px;
@@ -189,16 +263,14 @@ h2 ,h3{
 @media (max-width: 1024px){
     #hero{
     
-    box-shadow: inset 400px 50px 500px black,inset -250px -50px 500px black;
-    background-size: cover;
+    background-size: contain;
 }
     
 }
 @media (max-width: 724px){
     #hero{
     
-    box-shadow: inset 200px 40px 500px black,inset -70px -50px 70px black;
-    background-size: cover;
+    background-size: contain;
     
 
     
@@ -217,11 +289,17 @@ h2 ,h3{
 } 
 .socials{
    right: 1px;
-   top: 250px;
+  
    
    
 }
 #socialNavs a img{
     width: 20px;
 }
+.about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-tags { justify-content: center; }
+    
 }
