@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'The Amazing';
+    src: url('fonts/The Amazing Spider-Man.ttf') format('truetype');
+    
+}
+@font-face {
+    font-family: 'fortuner';
+    src: url(/fonts/fortuner.otf);
+}
+
 body{
     color: white;
     background: linear-gradient(to bottom, #000000, #001020);
@@ -8,17 +18,18 @@ body{
 }
 
 .projectWrapper{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 15px;
     width: 200px;
-    background-color: hsla(184, 51%, 24%, 0.1);
+    box-shadow: 2px 2px  1px rgb(8, 201, 255);
 }
 .projectWrapper:hover{
     transform: scale(0.99);
     transition: all 0.1s ease-in-out;
+    box-shadow: 0 5px 12px rgb(8, 201, 255);
 
 }
 .profile-img-wrapper {
@@ -45,12 +56,15 @@ body{
     
     justify-content: center;
     list-style: none;
+    border: 1px solid red;
 }
 #projectsSection{
     text-align: center;
     height: 100vh;
     overflow-y: auto;
     scrollbar-width: none;
+    border: 1px solid red;
+    margin-top: 10px;
 }
 .cardImage{
     width: 200px;
@@ -60,7 +74,7 @@ body{
 #hero{
     
     height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0;
     padding-left: 50px;
     display: flex;
@@ -81,12 +95,30 @@ body{
 
 #hero-content h1{
     font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
+#hero-content p{
+    font-size: 0.7em;
+    color: rgb(1, 200, 255);
+    text-shadow: 0px 0px 2px rgb(8, 201, 255);
+    font-family: 'fortuner', Courier, monospace;
+    border-right: 2px solid rgb(8, 201, 255);
+    background: linear-gradient(to right, transparent, rgb(4, 25, 31));
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 20px rgb(0, 0, 0);
+    
+    
+}
+
 p{
-    font-size: 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
     line-height: 1.8;
-    color: #94a3b8;
+    font-weight: 100;
+    color: rgb(152, 206, 212);
 }
 
 #about{
@@ -144,7 +176,7 @@ h2{
     z-index: 1;
 
     object-fit: cover;
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid rgb(8, 201, 255);
 }
 
 .accent-border {
@@ -155,13 +187,13 @@ h2{
     height: 11em;
     border: 2px solid rgb(0, 3, 3);
     border-radius: 20%;
-    background-color: cyan;
+    background-color: rgb(8, 201, 255);
     z-index: 0;
 }
 .about-underline {
     width: 50px;
     height: 2px;
-    background: cyan;
+    background: rgb(8, 201, 255);
     margin: 0 auto;
     border-radius: 2px;
 }
@@ -208,11 +240,7 @@ legend {
     padding: 0 10px;
 }
 
-p{
-    letter-spacing: 0.9px;
-    font-size: 15px;
-    font-family: cursive;
-}
+
 h2 ,h3{
     letter-spacing: 2px;
 }
@@ -221,25 +249,26 @@ h2 ,h3{
 
 .socials{
     position: fixed;
-   right: 20px;
-   top: 70%;
-   padding: 2px;
+   top: 0;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+   padding: 20px;
    border-radius: 10px;
-   z-index: 99;
+   z-index: 2;
    
 }
-.none{
-    display: none;
-}
+
 #socialNavs{
     display: flex;
-    flex-direction: column;
-    gap: 1px;
+    flex-direction: row;
+    gap: 5px;
 }
 
 #socialNavs a img{
-    width: 20px;
-    filter: invert(1)
+    width: 30px;
+    filter: invert(1);
+    border-radius: 50px;
 }
 #socialNavs a :hover{
     background-color: aliceblue;
@@ -249,33 +278,47 @@ h2 ,h3{
 }
 
 #knowme {
-    position: relative;
+    position: absolute;
     z-index: 1;
     display: flex;
-    gap: 12px;
-    margin-bottom: 24px;
-    
+    gap: 1px;
+    top: 80%;
+    text-align: center;
+    border: 1px solid white;
+    align-self: center;
 }
 #knowme a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
     color: white;
-    border: 1px solid rgba(255,255,255,0.3);
+    /* border: 1px solid rgba(255,255,255,0.3); */
     border-radius: 50%;
-    padding: 10px 22px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+#knowme a img{
+    border-radius: 10px;
+    width: 30px;
 }
 
 
-#knowme a:hover {
-    background: rgba(255,255,255,0.08);
+#knowme a img:hover {
+    background-color: aliceblue;
+    transform: rotate(360deg) scale(1.2);
+    transition: all 0.1s;
+    
 }
 
 #myname{
-    font-size: 56px;
+    font-size: 150%;
     color: white;
     display: block;
+    letter-spacing: 2px;
     margin-bottom: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'The Amazing', cursive;
 
 }
 #canvas1{
@@ -301,7 +344,7 @@ h2 ,h3{
 @media (max-width: 1024px){
     #hero{
     
-    background-size: contain;
+    /* background-size: contain; */
 }
     
 }
@@ -320,7 +363,7 @@ h2 ,h3{
 #hero-content{
    position: absolute;
     left: 1px;
-    top: 300px;
+    top: 50%;
    
 }
    .projectWrapper{
@@ -330,29 +373,32 @@ h2 ,h3{
     width: 300px;
 } 
 .socials{
-   right: 8px;
+  
   
    
    
 }
 #myname {
-        font-size: 38px;
+        font-size: 100%;
     }
 
    
 #socialNavs a img{
-    width: 20px;
+    /* width: 20px; */
 }
 .about-card {
         flex-direction: column;
         text-align: center;
     }
-    .about-tags { justify-content: center; }
 .profile-img-wrapper {
         width: 100%;
         height: 100%;
         opacity: 0.4;
     }
+    #knowme a img{
+    border-radius: 10px;
+    width: 25px;
+}
     
 
     

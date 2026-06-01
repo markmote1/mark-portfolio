@@ -46,13 +46,13 @@ ctx.fill()
 
 document.addEventListener('scroll',(e)=>{
     console.log(e)
-    socials.setAttribute('hidden','hidden')
+    socials.style.display = 'none'
     
 })
 
 document.addEventListener('scrollend',(e)=>{
     console.log(e)
-    socials.removeAttribute('hidden')
+    socials.style.display = 'flex'
     
     
     
