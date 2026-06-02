@@ -36,9 +36,16 @@
             <p>I simply do write code and create products</p>
 
  </div>
- 
 
- 
+
+ <a title="menu button" id="knowmeBtn">
+
+     <img class="menu-icon" src="/images/menu_17530685.png" alt="">
+
+ </a>
+
+
+    
     <nav id="knowme">
         <a href="" title="Download my resume"><img src="images/icons8-resume-48 (1).png" alt="Download Mark Mote's Resume"></a>
         <a href="" title="View my projects"><img src="images/icons8-project.gif" alt="View My Projects"></a>
@@ -68,16 +75,19 @@
 
 
 
-<section id="projectsSection">
-    <header>
+<section >
+    <header id="projectsHeader">
         <h2>My Projects</h2>
+        <div class="about-underline"></div>
         <p>Have a look at some of my works</p>
     </header>
+    
 <ul id="allProjects">
 
 
 
     </ul>
+    
 </section>
 
 <section id="skillsHolder">
@@ -85,6 +95,7 @@
         <h2>
             My Skills
         </h2>
+        <div class="about-underline"></div>
     </header>
 <ul id="skills">
     <li>Javascript</li>
@@ -102,6 +113,7 @@
         <h2>
              Contact me
         </h2>
+        <div class="about-underline"></div>
     </header>
 
 <form id="form1" title="Enter details to contact me on whatsapp!" action="">
@@ -114,12 +126,14 @@
         <input required type="text" id="fullname" placeholder="Mark Mote">
     </label>
     <br> <br>
-    <label for="textarea">Input your message here:<br><br>
+    <label for="textarea">Message:<br><br>
         <textarea  id="textarea" cols="40" rows="20" id="" placeholder="Enter your message here..." maxlength="200" required></textarea>
     </label>
 </div>
 
 </fieldset>
+
+<input id="submit" type="button" value="Submit">
 
 </form>
 

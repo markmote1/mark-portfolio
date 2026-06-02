@@ -2,7 +2,8 @@ let projects = [
     {
         id: 1,
         title: 'Web app 1',
-        description: 'A fullstack web app',
+        description: 'A social media web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -23,6 +24,7 @@ let projects = [
         id: 2,
         title: 'Web app 2',
         description: 'A blog web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -43,6 +45,7 @@ let projects = [
         id: 3,
         title: 'Web app 3',
         description: 'An ecommerce web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -63,6 +66,7 @@ let projects = [
         id: 4,
         title: 'Web app 4',
         description: 'A gym web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -83,6 +87,7 @@ let projects = [
         id: 5,
         title: 'Web app 5',
         description: 'A pharmacy web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -103,6 +108,7 @@ let projects = [
         id: 6,
         title: 'Web app 6',
         description: 'A construction web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -123,6 +129,7 @@ let projects = [
         id: 7,
         title: 'Web app 7',
         description: 'A school web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'
@@ -143,6 +150,7 @@ let projects = [
         id: 8,
         title: 'Web app 8',
         description: 'A market web app',
+        link: 'https://markmote.netlify.app/',
         image: '/images/markmote.jpg',
         screenshots: [{img1: 'img',
             about: 'A screenshot showing hero section'

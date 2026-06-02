@@ -8,22 +8,46 @@ console.log('init')
 let socials = document.querySelector('.socials')
 let projectHolder = document.querySelector('#allProjects')
 let canvas = document.querySelector('#canvas1')
+let menuBtn = document.querySelector('#knowmeBtn')
+const nav = document.querySelector('#knowme')
+const arrowLine = document.querySelector('.arrow-line')
+const line = document.querySelector('.line')
+
+
+menuBtn.addEventListener('click',()=>{
+    const isOpen = nav.classList.toggle('open')
+    menuBtn.setAttribute('aria-expanded', isOpen)
+    
+}
+
+
+)
+
+
+
+
 
 
 let createCard = (project)=>{
     let titleHolder = document.createElement('h3')
     let descriptionHolder = document.createElement('p')
     let imageHolder = document.createElement('img')
+    let aHolder = document.createElement('a')
     imageHolder.classList.add('cardImage')
     let card = document.createElement('li')
 
     titleHolder.textContent = project.title
     imageHolder.src = project.image
     descriptionHolder.textContent = project.description
+    let link = project.link
+    aHolder.href = link
+    aHolder.target = '_blank'
+    
     
     card.append(titleHolder,imageHolder, descriptionHolder)
     card.classList.add('projectWrapper')
-    projectHolder.append(card)
+    aHolder.append(card)
+    projectHolder.appendChild(aHolder)
 
 
     

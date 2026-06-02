@@ -10,26 +10,49 @@
 
 body{
     color: white;
-    background: linear-gradient(to bottom, #000000, #001020);
+    background: linear-gradient(to bottom, #000000, #000000);
     margin: 10px;
     padding: 0;
     font-weight: 500;
     box-sizing: border-box;
 }
 
-.projectWrapper{
-    /* border: 1px solid white; */
-    padding: 20px;
-    margin: 10px;
+.projectWrapper {
+    padding: 4em;
+    margin: 2px;
+    border-radius: 10px;
+    width: 50vw;
+    align-self: center;
     text-align: center;
-    border-radius: 15px;
-    width: 200px;
+
+    
+    height: 50vh;
+    list-style: none;
     box-shadow: 2px 2px  1px rgb(8, 201, 255);
+}
+.projectWrapper p{
+    
+   color: rgb(197, 211, 218);
+   
+    
+}
+
+.projectWrapper h3{
+    position:static;
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+#projectsHeader{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
 }
 .projectWrapper:hover{
     transform: scale(0.99);
-    transition: all 0.1s ease-in-out;
-    box-shadow: 0 5px 12px rgb(8, 201, 255);
+    transition: scale 0.1s ease-in-out;
 
 }
 .profile-img-wrapper {
@@ -52,29 +75,32 @@ body{
 
 #allProjects{
     display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    list-style: none;
-    border: 1px solid red;
-}
-#projectsSection{
-    text-align: center;
-    height: 100vh;
-    overflow-y: auto;
+    /* position: relative; */
+    margin-top: 60px;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
     scrollbar-width: none;
-    border: 1px solid red;
-    margin-top: 10px;
 }
+#allProjects a{
+    text-decoration: none;
+
+}
+
 .cardImage{
-    width: 200px;
+    width: 30%;
     border-radius: 5px;
+    align-self: center;
+    margin-left: 0;
+    margin: 10px;
 }
+
+
 
 #hero{
     
     height: 100vh;
-    /* border: 2px solid red; */
+    border-radius: 10px;
     margin: 0;
     padding-left: 50px;
     display: flex;
@@ -84,7 +110,26 @@ body{
     justify-content: center;
     
 }
+.menu-icon{
+    width: 40px;
+    position: absolute;
+   margin: 0;
 
+}
+
+#knowmeBtn{
+    position: absolute;
+    z-index: 1;
+     
+    top: 80%;
+    left: 5%;
+    text-align: center;
+    align-self: center;
+}
+.menu-icon:hover{
+    transform: scale(1.2);
+    transition: all 0.1s;
+}
 #hero-content{
     position: relative;
     max-width: 480px;
@@ -98,10 +143,10 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 #hero-content p{
-    font-size: 0.7em;
-    color: rgb(1, 200, 255);
+    font-size: 0.9em;
+    color: rgb(197, 211, 218);
     text-shadow: 0px 0px 2px rgb(8, 201, 255);
-    font-family: 'fortuner', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     border-right: 2px solid rgb(8, 201, 255);
     background: linear-gradient(to right, transparent, rgb(4, 25, 31));
     border-radius: 5px;
@@ -114,11 +159,11 @@ body{
 }
 
 p{
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
     line-height: 1.8;
     font-weight: 100;
-    color: rgb(152, 206, 212);
+    color: rgb(109, 140, 155);
 }
 
 #about{
@@ -127,7 +172,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
 
 }
 #about header{
@@ -143,7 +187,6 @@ h2{
     gap: 40px;
     max-width: 768px;
     margin: 0 auto;
-    border: 1px solid red;
     
     
 }
@@ -201,40 +244,78 @@ h2{
 #skills{
     text-align: center;
     padding: 20px;
-    line-height: 30px;
+    line-height: 50px;
     list-style: none;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 10px;
     
 }
 #skillsHolder {
     text-align: center;
     height: 100vh;
+    /* display: absolute; */
+    margin-top: 150px;
+}
+#skills li{
+    background: fixed;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: hsla(0, 0%, 0%, 0.1);
+    box-shadow: 2px 2px 1px rgb(1, 104, 133);
+    font-weight: 100;
+    letter-spacing: 4px;
+    max-width: 50%;
+    align-self: center;
 }
 
 #contact{
     text-align: center;
+    margin-top: 150px;
 
 }
 
 #form1{
     padding: 30px;
     margin: 20px auto;
-    max-width: 600px;
+    min-width: 50%;
     text-align: center;
     
 }
 fieldset{
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
     padding: 20px;
-    background-color: hsla(184, 51%, 24%, 0.1);
+    color: #acc9f3;
+    font-size: 1em;
+    background-color: hsla(0, 0, 0, 0.1);
+    border: none;
+
 }
 input, textarea {
-    width: 90%;
-    padding: 10px;
+    padding: 4px;
     margin: 5px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 0%, 0.0);
+    border: none;
+    box-shadow: 2px 2px 1px rgb(2, 103, 131);}
+input::placeholder, textarea::placeholder{
+    color: #94a3b8;
 }
+#submit{
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1em;
+    width: 10em;
+    
+    background-color: hsla(192, 100%, 50%, 0.1);
+    border: none;
+    box-shadow: 2px 2px 1px rgb(1, 200, 255);
+}
+
 legend {
     color: white;
     padding: 0 10px;
@@ -242,7 +323,8 @@ legend {
 
 
 h2 ,h3{
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-family: 'fortuner', cursive;
 }
 
 
@@ -277,6 +359,8 @@ h2 ,h3{
     border-radius: 50px;
 }
 
+
+
 #knowme {
     position: absolute;
     z-index: 1;
@@ -284,14 +368,19 @@ h2 ,h3{
     gap: 1px;
     top: 80%;
     text-align: center;
-    border: 1px solid white;
     align-self: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#knowme.open {
+    opacity: 1;
+    visibility: visible;
 }
 #knowme a{
     text-decoration: none;
     font-size: 10px;
     color: white;
-    /* border: 1px solid rgba(255,255,255,0.3); */
     border-radius: 50%;
     padding: 10px;
     display: flex;
@@ -312,11 +401,13 @@ h2 ,h3{
     
 }
 
+
+
 #myname{
     font-size: 150%;
     color: white;
     display: block;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin-bottom: 12px;
     font-family: 'The Amazing', cursive;
 
@@ -330,10 +421,9 @@ h2 ,h3{
 }
 
 #footer{
-    background-color: hsla(184, 91%, 9%, 0.1);
-    margin: 20px;
+    background-color: hsla(183, 90%, 15%, 0.1);
+    margin-top: 50px;
     padding: 10px ;
-    border: 1px solid white;
     border-radius: 5px;
     text-align: center;
 
@@ -341,12 +431,13 @@ h2 ,h3{
 }
 
 
+
+
 @media (max-width: 1024px){
     #hero{
     
-    /* background-size: contain; */
 }
-    
+
 }
 @media (max-width: 724px){
     #hero{
@@ -366,12 +457,16 @@ h2 ,h3{
     top: 50%;
    
 }
-   .projectWrapper{
+   /* .projectWrapper{
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    width: 300px;
-} 
+    width: 80vw;
+    align-self: center;
+    
+    height: 50vh;
+
+}  */
 .socials{
   
   
