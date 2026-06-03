@@ -17,18 +17,21 @@ body{
     box-sizing: border-box;
 }
 
-.projectWrapper {
-    padding: 4em;
-    margin: 2px;
-    border-radius: 10px;
-    width: 50vw;
-    align-self: center;
-    text-align: center;
+.projectWrapper{
+    width: 350px;
+    min-height: 450px;
 
-    
-    height: 50vh;
-    list-style: none;
-    box-shadow: 2px 2px  1px rgb(8, 201, 255);
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.03);
+
+
+    transition: transform .2s ease;
 }
 .projectWrapper p{
     
@@ -75,10 +78,9 @@ body{
 
 #allProjects{
     display: flex;
-    /* position: relative; */
     margin-top: 60px;
     overflow-x: auto;
-    padding: 10px;
+    padding: 0px;
     gap: 20px;
     scrollbar-width: none;
 }
@@ -88,11 +90,10 @@ body{
 }
 
 .cardImage{
-    width: 30%;
-    border-radius: 5px;
-    align-self: center;
-    margin-left: 0;
-    margin: 10px;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 
@@ -457,55 +458,8 @@ h2 ,h3{
     top: 50%;
    
 }
-   #allProjects{
-        gap: 15px;
-        padding: 15px;
-        scroll-snap-type: x mandatory;
-    }
 
-    #allProjects a{
-        flex-shrink: 0;
-    }
 
-    .projectWrapper{
-        width: 85vw;
-        min-height: 420px;
-        height: auto;
-
-        padding: 1.2rem;
-        margin: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        scroll-snap-align: center;
-
-        border-radius: 15px;
-    }
-
-    .projectWrapper h3{
-        padding: 0;
-        margin-bottom: 12px;
-        font-size: 1.2rem;
-        line-height: 1.4;
-    }
-
-    .projectWrapper p{
-        font-size: 0.9rem;
-        line-height: 1.7;
-        overflow-wrap: break-word;
-    }
-
-    .cardImage{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-
-}
 .socials{
   
   
