@@ -24,10 +24,6 @@ menuBtn.addEventListener('click',()=>{
 )
 
 
-
-
-
-
 let createCard = (project)=>{
     let titleHolder = document.createElement('h3')
     let descriptionHolder = document.createElement('p')
@@ -56,8 +52,26 @@ let createCard = (project)=>{
 
 projects.forEach(createCard)
 
+function sendToWhatsApp() {
+  const name = document.getElementById('fullname').value.trim() ?? '';
+  const message = document.getElementById('textarea').value.trim() ?? '';
+  const submit = document.getElementById('submit')
 
-console.log(projects)
+  if (!name || !message) {
+    alert('Please fill in both fields.');
+    return;
+  }
+
+  const phone = '254705064027';
+  const text = `Name: ${name}\nMessage: ${message}`;
+  const encoded = encodeURIComponent(text);
+
+  window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
+
+}
+  submit.addEventListener('click',sendToWhatsApp)
+
+
 canvas.height = 490
 canvas.width = 200
 

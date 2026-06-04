@@ -23,6 +23,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 2px 1px rgb(1, 104, 133);
 
     padding: 1.5rem;
 
@@ -297,6 +298,7 @@ fieldset{
 input, textarea {
     padding: 4px;
     margin: 5px 0;
+    color: white;
     border-radius: 10px;
     background-color: hsla(0, 0%, 0%, 0.0);
     border: none;
