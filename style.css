@@ -1,23 +1,24 @@
 @font-face {
     font-family: 'The Amazing';
     src: url('fonts/The Amazing Spider-Man.ttf') format('truetype');
-    
+
 }
+
 @font-face {
     font-family: 'fortuner';
     src: url(/fonts/fortuner.otf);
 }
 
-body{
+body {
     color: white;
     background: linear-gradient(to bottom, #000000, #000000);
-    margin: 10px;
+    margin: 0px;
     padding: 0;
     font-weight: 500;
     box-sizing: border-box;
 }
 
-.projectWrapper{
+.projectWrapper {
     width: 350px;
     min-height: 450px;
 
@@ -29,36 +30,39 @@ body{
 
     border-radius: 16px;
 
-    background: rgba(255,255,255,0.03);
+    background: rgba(255, 255, 255, 0.03);
 
 
     transition: transform .2s ease;
 }
-.projectWrapper p{
-    
-   color: rgb(197, 211, 218);
-   
-    
+
+.projectWrapper p {
+
+    color: rgb(197, 211, 218);
+
+
 }
 
-.projectWrapper h3{
-    position:static;
+.projectWrapper h3 {
+    position: static;
     color: white;
     margin-bottom: 20px;
     padding: 20px;
-    
+
 }
 
-#projectsHeader{
+#projectsHeader {
     text-align: center;
     margin-top: 50px;
     padding: 20px;
 }
-.projectWrapper:hover{
+
+.projectWrapper:hover {
     transform: scale(0.99);
     transition: scale 0.1s ease-in-out;
 
 }
+
 .profile-img-wrapper {
     position: absolute;
     right: 0;
@@ -73,11 +77,11 @@ body{
     width: 100%;
     object-fit: cover;
     object-position: top center;
-    mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);
-    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0) 100%);
 }
 
-#allProjects{
+#allProjects {
     display: flex;
     margin-top: 60px;
     overflow-x: auto;
@@ -85,12 +89,13 @@ body{
     gap: 20px;
     scrollbar-width: none;
 }
-#allProjects a{
+
+#allProjects a {
     text-decoration: none;
 
 }
 
-.cardImage{
+.cardImage {
     width: 100%;
     height: 220px;
     object-fit: contain;
@@ -99,8 +104,8 @@ body{
 
 
 
-#hero{
-    
+#hero {
+
     height: 100vh;
     border-radius: 10px;
     margin: 0;
@@ -110,41 +115,45 @@ body{
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.menu-icon{
+
+.menu-icon {
     width: 40px;
     position: absolute;
-   margin: 0;
+    margin: 0;
 
 }
 
-#knowmeBtn{
+#knowmeBtn {
     position: absolute;
     z-index: 1;
-     
+
     top: 80%;
     left: 5%;
     text-align: center;
     align-self: center;
 }
-.menu-icon:hover{
+
+.menu-icon:hover {
     transform: scale(1.2);
     transition: all 0.1s;
 }
-#hero-content{
+
+#hero-content {
     position: relative;
     max-width: 480px;
     margin-bottom: 20px;
     z-index: 1;
-    
+
 }
 
-#hero-content h1{
+#hero-content h1 {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
 }
-#hero-content p{
+
+#hero-content p {
     font-size: 0.9em;
     color: rgb(197, 211, 218);
     text-shadow: 0px 0px 2px rgb(8, 201, 255);
@@ -156,11 +165,11 @@ body{
     font-weight: 500;
     letter-spacing: 3px;
     text-shadow: 3px 3px 20px rgb(0, 0, 0);
-    
-    
+
+
 }
 
-p{
+p {
     font-size: 0.9em;
     letter-spacing: 1px;
     line-height: 1.8;
@@ -168,7 +177,7 @@ p{
     color: rgb(109, 140, 155);
 }
 
-#about{
+#about {
     padding: 60px 40px;
     height: 100vh;
     display: flex;
@@ -176,45 +185,53 @@ p{
     justify-content: center;
 
 }
-#about header{
+
+#about header {
     text-align: center;
     margin-bottom: 40px;
 }
-h2{
+
+h2 {
     margin-bottom: 8px;
 }
-.about-card{
+
+.about-card {
     display: flex;
     align-items: center;
     gap: 40px;
     max-width: 768px;
     margin: 0 auto;
-    
-    
+
+
 }
-.about-img-wrapper{
+
+.about-img-wrapper {
     flex-shrink: 0;
     position: relative;
 }
-.about-info{
+
+.about-info {
     flex: 1;
     border: 1px solid green;
     background-color: hsla(184, 51%, 24%, 0.1);
     padding: 20px;
-        border-radius: 12px;
+    border-radius: 12px;
 }
+
 .about-info p:first-child {
     font-size: 17px;
     font-weight: 500;
     color: white;
     margin-bottom: 16px;
 }
+
 .about-info p {
     color: #94a3b8;
     line-height: 1.8;
     margin-bottom: 16px;
 }
-.about-img{
+
+.about-img {
     height: 18em;
     border-radius: 12px;
     position: relative;
@@ -235,6 +252,7 @@ h2{
     background-color: rgb(8, 201, 255);
     z-index: 0;
 }
+
 .about-underline {
     width: 50px;
     height: 2px;
@@ -243,7 +261,7 @@ h2{
     border-radius: 2px;
 }
 
-#skills{
+#skills {
     text-align: center;
     padding: 20px;
     line-height: 50px;
@@ -252,15 +270,17 @@ h2{
     margin-top: 50px;
     flex-direction: column;
     gap: 10px;
-    
+
 }
+
 #skillsHolder {
     text-align: center;
     height: 100vh;
     /* display: absolute; */
     margin-top: 150px;
 }
-#skills li{
+
+#skills li {
     background: fixed;
     border-radius: 12px;
     padding: 10px;
@@ -272,20 +292,21 @@ h2{
     align-self: center;
 }
 
-#contact{
+#contact {
     text-align: center;
     margin-top: 150px;
 
 }
 
-#form1{
+#form1 {
     padding: 30px;
     margin: 20px auto;
     min-width: 50%;
     text-align: center;
-    
+
 }
-fieldset{
+
+fieldset {
     border-radius: 10px;
     margin-top: 50px;
     padding: 20px;
@@ -295,25 +316,31 @@ fieldset{
     border: none;
 
 }
-input, textarea {
+
+input,
+textarea {
     padding: 4px;
     margin: 5px 0;
     color: white;
     border-radius: 10px;
     background-color: hsla(0, 0%, 0%, 0.0);
     border: none;
-    box-shadow: 2px 2px 1px rgb(2, 103, 131);}
-input::placeholder, textarea::placeholder{
+    box-shadow: 2px 2px 1px rgb(2, 103, 131);
+}
+
+input::placeholder,
+textarea::placeholder {
     color: #94a3b8;
 }
-#submit{
+
+#submit {
     padding: 10px;
-    margin: 10px ;
+    margin: 10px;
     border-radius: 10px;
     color: #ffffff;
     font-size: 1em;
     width: 10em;
-    
+
     background-color: hsla(192, 100%, 50%, 0.1);
     border: none;
     box-shadow: 2px 2px 1px rgb(1, 200, 255);
@@ -325,43 +352,43 @@ legend {
 }
 
 
-h2 ,h3{
+h2,
+h3 {
     letter-spacing: 3px;
     font-family: 'fortuner', cursive;
 }
 
 
-
-.socials{
+.socials {
     position: fixed;
-   top: 0;
+    top: 0;
     display: flex;
     align-self: center;
     flex-direction: row;
-   padding: 20px;
-   border-radius: 10px;
-   z-index: 2;
-   
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+
 }
 
-#socialNavs{
+#socialNavs {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
 
-#socialNavs a img{
+#socialNavs a img {
     width: 30px;
     filter: invert(1);
     border-radius: 50px;
 }
-#socialNavs a :hover{
+
+#socialNavs a :hover {
     background-color: aliceblue;
     transform: rotate(360deg) scale(1.2);
     transition: all 0.1s;
     border-radius: 50px;
 }
-
 
 
 #knowme {
@@ -376,11 +403,13 @@ h2 ,h3{
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 #knowme.open {
     opacity: 1;
     visibility: visible;
 }
-#knowme a{
+
+#knowme a {
     text-decoration: none;
     font-size: 10px;
     color: white;
@@ -391,7 +420,8 @@ h2 ,h3{
     align-items: center;
     font-size: 12px;
 }
-#knowme a img{
+
+#knowme a img {
     border-radius: 10px;
     width: 30px;
 }
@@ -401,12 +431,11 @@ h2 ,h3{
     background-color: aliceblue;
     transform: rotate(360deg) scale(1.2);
     transition: all 0.1s;
-    
+
 }
 
 
-
-#myname{
+#myname {
     font-size: 150%;
     color: white;
     display: block;
@@ -415,7 +444,8 @@ h2 ,h3{
     font-family: 'The Amazing', cursive;
 
 }
-#canvas1{
+
+#canvas1 {
     border: 10px solid white;
     position: absolute;
     left: 0px;
@@ -423,73 +453,60 @@ h2 ,h3{
 
 }
 
-#footer{
+#footer {
     background-color: hsla(183, 90%, 15%, 0.1);
     margin-top: 50px;
-    padding: 10px ;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
 
-    
-}
-
-
-
-
-@media (max-width: 1024px){
-    #hero{
-    
-}
 
 }
-@media (max-width: 724px){
-    #hero{
-    
-    padding-left: 20px;
+
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 724px) {
+    #hero {
+
+        padding-left: 20px;
         padding-right: 20px;
         align-items: flex-start;
         justify-content: flex-end;
         padding-bottom: 60px;
-    
-
-    
-}
-#hero-content{
-   position: absolute;
-    left: 1px;
-    top: 50%;
-   
-}
 
 
-.socials{
-  
-  
-   
-   
-}
-#myname {
+
+    }
+
+    #hero-content {
+        position: absolute;
+        left: 1px;
+        top: 50%;
+
+    }
+
+    #myname {
         font-size: 100%;
     }
 
-   
-#socialNavs a img{
-    /* width: 20px; */
-}
-.about-card {
+
+    .about-card {
         flex-direction: column;
         text-align: center;
     }
-.profile-img-wrapper {
+
+    .profile-img-wrapper {
         width: 100%;
         height: 100%;
         opacity: 0.4;
     }
-    #knowme a img{
-    border-radius: 10px;
-    width: 25px;
-}
-    
 
-    
+    #knowme a img {
+        border-radius: 10px;
+        width: 25px;
+    }
+
+
+
 }
