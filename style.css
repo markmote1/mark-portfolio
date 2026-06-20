@@ -16,6 +16,7 @@ body {
     padding: 0;
     font-weight: 500;
     box-sizing: border-box;
+    font-family: 'Inter', 'Roboto', monospace;
 }
 
 .projectWrapper {
@@ -150,14 +151,13 @@ body {
 
 #hero-content h1 {
     font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 #hero-content p {
     font-size: 0.9em;
     color: rgb(197, 211, 218);
     text-shadow: 0px 0px 2px rgb(8, 201, 255);
-    font-family: 'Courier New', Courier, monospace;
     border-right: 2px solid rgb(8, 201, 255);
     background: linear-gradient(to right, transparent, rgb(4, 25, 31));
     border-radius: 5px;
@@ -276,7 +276,6 @@ h2 {
 #skillsHolder {
     text-align: center;
     height: 100vh;
-    /* display: absolute; */
     margin-top: 150px;
 }
 
@@ -340,7 +339,6 @@ textarea::placeholder {
     color: #ffffff;
     font-size: 1em;
     width: 10em;
-
     background-color: hsla(192, 100%, 50%, 0.1);
     border: none;
     box-shadow: 2px 2px 1px rgb(1, 200, 255);
@@ -355,7 +353,7 @@ legend {
 h2,
 h3 {
     letter-spacing: 3px;
-    font-family: 'fortuner', cursive;
+    font-family: 'Inter', cursive;
 }
 
 
