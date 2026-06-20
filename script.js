@@ -18,8 +18,13 @@ window.onload = () => {
 
   }
 
-
-  )
+  
+  
+)
+window.addEventListener("scroll", () => {
+  nav.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+});
 
 
   let createCard = (project) => {
