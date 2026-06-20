@@ -4,10 +4,6 @@
 
 }
 
-@font-face {
-    font-family: 'fortuner';
-    src: url(/fonts/fortuner.otf);
-}
 
 body {
     color: white;
@@ -439,7 +435,7 @@ h3 {
     display: block;
     letter-spacing: 4px;
     margin-bottom: 12px;
-    font-family: 'The Amazing', cursive;
+    font-family: 'The Amazing', 'cursive';
 
 }
 
