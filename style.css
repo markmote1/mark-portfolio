@@ -134,14 +134,12 @@ body {
 #hero-content p {
     font-size: 0.9em;
     color: rgb(197, 211, 218);
-    text-shadow: 0px 0px 2px rgb(8, 201, 255);
     border-right: 2px solid rgb(8, 201, 255);
     background: linear-gradient(to right, transparent, rgb(4, 25, 31));
     border-radius: 5px;
     padding: 5px;
     font-weight: 500;
     letter-spacing: 2px;
-    text-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
 
 p {
@@ -244,7 +242,6 @@ h2 {
 }
 
 #skills li {
-    background: fixed;
     border-radius: 12px;
     padding: 10px;
     background-color: hsla(0, 0%, 0%, 0.1);
@@ -275,7 +272,7 @@ fieldset {
     padding: 20px;
     color: #acc9f3;
     font-size: 1em;
-    background-color: hsla(0, 0, 0, 0.1);
+    background-color: hsla(0, 0, 0, 0.1%);
     border: none;
 
 }
