@@ -8,7 +8,7 @@ body {
     color: white;
     background: linear-gradient(to bottom, #000000, #000000);
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     font-weight: 500;
     box-sizing: border-box;
     font-family: 'Inter', 'Roboto', monospace;
@@ -140,7 +140,7 @@ body {
     border-radius: 5px;
     padding: 5px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-shadow: 3px 3px 20px rgb(0, 0, 0);
 }
 
@@ -225,14 +225,6 @@ h2 {
     z-index: 0;
 }
 
-.about-underline {
-    width: 50px;
-    height: 2px;
-    background: rgb(8, 201, 255);
-    margin: 0 auto;
-    border-radius: 2px;
-}
-
 #skills {
     text-align: center;
     padding: 20px;
@@ -258,7 +250,7 @@ h2 {
     background-color: hsla(0, 0%, 0%, 0.1);
     box-shadow: 2px 2px 1px rgb(1, 104, 133);
     font-weight: 100;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     max-width: 50%;
     align-self: center;
 }
